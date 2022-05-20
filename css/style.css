@@ -3,15 +3,30 @@
 #box-a {
     border: 1px solid black;
 }
+#box-a:hover{
+    border: 5px dashed purple;
 
+}
 
 #box-b {
     border: 1px solid black;
 }
 
+#box-b:active{
+    background-color: aqua;
+    transition: background-color 1s ease-in-out;
+}
+
 
 #box-c {
     border: 1px solid black;
+}
+
+#box-c:active{
+    color:red;
+    font-size: 24px;
+    transition: color 1s ease-out,
+    font-size 2s ease-in;
 }
 
 
@@ -20,10 +35,18 @@
     overflow: hidden;
 }
 
+#box-d:active{
+border-radius: 50%;
+transition: border-radius 2s ease-in;
+}
 
 #box-e {
     border: 1px solid black;
     transition: padding-top 5s ease;
+}
+#box-e:hover{
+padding-top: 100px;
+transition: padding-top 5s ease;
 }
 
 
@@ -32,10 +55,24 @@
     transition: color 2s, background-color 4s, border 3s;
 }
 
+#box-f:hover{
+    border: 4px solid green;
+    color:brown;
+    background-color: blanchedalmond;
+    transition: color 2s,
+    background-color 4s,
+    border 3s;
+
+}
 
 .nav-button {
     padding: 10px 0;
     border: 1px solid black;
+
+}
+.nav-button:hover{
+    background-color: gray;
+    color: white;
 }
 
 
@@ -43,7 +80,9 @@
     border: 1px solid black;
     padding-top: 30px;
 }
-
+#middle-container > p:nth-child(2n+2){
+    background-color: red;
+}
 
 /* You don't need to touch this code for the homework */
 /* ------------------------------------------------------- */
